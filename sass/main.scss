@@ -2,14 +2,35 @@
 @import "assets/mixin";
 @import "assets/font";
 @import "assets/page01";
-@import "assets/ifelse";
-
-
-
-@for $i from 1 through 4 {
-    .add-#{$i} {
-        width: 10px*$i;
+@import "assets/ifelse"; // @for $i from 1 through 4 {
+//     .add-#{$i} {
+//         width: 10px*$i;
+//     }
+// }
+// @include margin_dis(bottom,100);
+//rwd  基本
+@mixin max-mediaquery ($size) {
+     @media screen and (max-width: $size + px){
+        @content
     }
-}
+};
+@mixin min-mediaquery ($size) {
+     @media screen and (min-width: $size + px){
+        @content
+    }
+};
+@include max-mediaquery (480) {
+    font-size: 20px;
+};
 
-@include margin_dis(bottom,100);
+//rwd  變化
+@include respones(medium) {
+    width: 100px;
+};
+
+@include respones(large) {
+    width: 200px;
+};
+@include respones(small) {
+    width: 80px;
+};
