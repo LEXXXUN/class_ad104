@@ -3,3 +3,13 @@
 @import "assets/font";
 @import "assets/page01";
 @import "assets/ifelse";
+
+
+
+@for $i from 1 through 4 {
+    .add-#{$i} {
+        width: 10px*$i;
+    }
+}
+
+@include margin_dis(bottom,100);
