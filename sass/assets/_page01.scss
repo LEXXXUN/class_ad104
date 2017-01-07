@@ -1,0 +1,22 @@
+body {
+    font-size: $fontbase;
+}
+
+// ceil 無條件進入
+// floor 無條件捨去
+// round 四捨五入
+
+.wrapper {
+    h1 {
+        font-size: round($fontbase * 3);
+    }
+    h2 {
+        font-size: round($fontbase * 2.5);
+    }
+    h3 {
+        font-size: round($fontbase *1.5);
+    }
+    h4 {
+        font-size: round($fontbase * 1);
+    }
+}

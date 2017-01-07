@@ -1,25 +1,20 @@
 @import "assets/var";
+@import "assets/mixin";
 @import "assets/font";
-
-body {
-    font-size: $fontbase;
+@import "assets/page01";
+@mixin marginauto() {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 15px;
 }
- 
-// ceil 無條件進入
-// floor 無條件捨去
-// round 四捨五入
 
 .wrapper {
-    h1 {
-        font-size: round($fontbase * 3);
-    }
-    h2 {
-        font-size: round($fontbase * 2.5);
-    }
-    h3 {
-        font-size: round($fontbase *1.5);
-    }
-    h4 {
-        font-size: round($fontbase * 1);
-    }
+    @include marginauto;
 }
+
+.box {
+    @include marginauto;
+}
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
