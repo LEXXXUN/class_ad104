@@ -2,19 +2,9 @@
 @import "assets/mixin";
 @import "assets/font";
 @import "assets/page01";
-@mixin marginauto() {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    font-size: 15px;
-}
 
 .wrapper {
-    @include marginauto;
-}
-
-.box {
-    @include marginauto;
+    @include margin(10px,40px,90px,40px,100%);
 }
 // @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
 // @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
