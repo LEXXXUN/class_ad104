@@ -1,0 +1,18 @@
+@import "assets/var";
+@import "assets/font";
+
+.wrapper {
+    h1 {
+        font-size: $fontsize;
+    }
+    h2 {
+      font-size: $fontsizeh2;
+      span {
+       font-size: 30px;
+       color: rgb(156, 46, 215);
+       font-weight: $font-bold;
+
+
+      }
+    }
+}

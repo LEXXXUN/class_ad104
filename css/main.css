@@ -1,0 +1,8 @@
+.wrapper h1 {
+  font-size: 140px; }
+.wrapper h2 {
+  font-size: 100px; }
+  .wrapper h2 span {
+    font-size: 30px;
+    color: #9c2ed7;
+    font-weight: 100; }
