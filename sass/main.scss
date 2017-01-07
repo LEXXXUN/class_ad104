@@ -1,18 +1,25 @@
 @import "assets/var";
 @import "assets/font";
 
+body {
+    font-size: $fontbase;
+}
+ 
+// ceil 無條件進入
+// floor 無條件捨去
+// round 四捨五入
+
 .wrapper {
     h1 {
-        font-size: $fontsize;
+        font-size: round($fontbase * 3);
     }
     h2 {
-      font-size: $fontsizeh2;
-      span {
-       font-size: 30px;
-       color: rgb(156, 46, 215);
-       font-weight: $font-bold;
-
-
-      }
+        font-size: round($fontbase * 2.5);
+    }
+    h3 {
+        font-size: round($fontbase *1.5);
+    }
+    h4 {
+        font-size: round($fontbase * 1);
     }
 }

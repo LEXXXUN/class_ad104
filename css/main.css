@@ -1,8 +1,11 @@
+body {
+  font-size: 13px; }
+
 .wrapper h1 {
-  font-size: 140px; }
+  font-size: 39px; }
 .wrapper h2 {
-  font-size: 100px; }
-  .wrapper h2 span {
-    font-size: 30px;
-    color: #9c2ed7;
-    font-weight: 100; }
+  font-size: 33px; }
+.wrapper h3 {
+  font-size: 20px; }
+.wrapper h4 {
+  font-size: 13px; }
