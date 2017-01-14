@@ -13,8 +13,7 @@ module.exports = function(grunt) {
                 files: ['*.html']
             },
             js: {
-                files: ['js/*.js'],
-                tasks: ['js']
+                files: ['js/*.js']
             }
         },
         //sass

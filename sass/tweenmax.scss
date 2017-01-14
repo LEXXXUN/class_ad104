@@ -1,7 +1,7 @@
 @import "assets/var";
 @import "assets/mixin";
 // @import "assets/font";
-// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
     background-color: #000000;
@@ -26,6 +26,20 @@ body {
         p {
           margin-top: 20px;
         }
+    }
+
+
+    .section_02 {
+       .flow{
+         .item {
+           height: 120px;
+         }
+
+
+       }
+
+
+
     }
 
 
