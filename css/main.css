@@ -51,3 +51,34 @@ body {
   width: 200px; }
 @media all and (max-width: 721px) {
   width: 80px; }
+h1, h2 {
+  color: #8b1212;
+  margin-top: 10px; }
+
+.margintop, h1 {
+  margin-top: 10px; }
+
+h1 {
+  font-size: 34px; }
+
+h2 {
+  font-size: 24px; }
+
+h1 {
+  color: #db2020;
+  font-size: 34px; }
+
+h2 {
+  color: #db2020;
+  font-size: 24px; }
+
+.aa {
+  font-size: 100px; }
+  .aa.bb {
+    color: green; }
+
+.link {
+  font-size: 100px;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: overline; }
