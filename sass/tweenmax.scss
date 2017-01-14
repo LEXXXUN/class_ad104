@@ -1,0 +1,34 @@
+@import "assets/var";
+@import "assets/mixin";
+// @import "assets/font";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+    @include box-sizing(border-box);
+}
+
+.wrapper {
+
+
+
+    .section_01 {
+        text-align: center;
+        padding-top: 300px;
+        p {
+          margin-top: 20px;
+        }
+    }
+
+
+
+
+}
