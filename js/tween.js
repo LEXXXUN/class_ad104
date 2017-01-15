@@ -25,14 +25,14 @@ $(function() {
 
   var controller = new ScrollMagic.Controller();
 
-  var wp = new TimelineMax().staggerFromTo(".flow .item", 0.5, {
+  var wp = new TimelineMax().staggerFromTo([".item4" ,".item3" ,".flow" ,".item2" ,".item1"], 0.5, {
         y: -50,
         opacity: 0
     }, {
         y: 0,
         opacity: 1,
     }, 0.1);
-
+      console.log("time");
     var scene = new ScrollMagic.Scene({
             triggerElement: "#section_01",
             reverse: true,
