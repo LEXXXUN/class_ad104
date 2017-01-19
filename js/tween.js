@@ -22,45 +22,40 @@ $(function() {
     });
 
     console.log("ok");
+    //scrollmagic start
 
-  var controller = new ScrollMagic.Controller();
+//   var controller = new ScrollMagic.Controller();
+// // new 場景
+//
+//
+//
+//   var wp = new TweenMax().staggerFromTo(".flow .item", 0.5, {
+//         y: -50,
+//         opacity: 0
+//     }, {
+//         y: 0,
+//         opacity: 1,
+//     }, 0.1);
+//       console.log("time");
+//     var scene = new ScrollMagic.Scene({
+//             triggerElement: "#section_01",
+//             reverse: true,
+//         })
+//
+//       .setTween(wp)
+//       .addIndicators() // add indicators (requires plugin)
+//       .addTo(controller);
 
-  var wp = new TimelineMax().staggerFromTo([".item4" ,".item3" ,".flow" ,".item2" ,".item1"], 0.5, {
-        y: -50,
+  TweenMax.staggerTo(".flow .item", 0.5, {
+        y: -100,
         opacity: 0
     }, {
         y: 0,
         opacity: 1,
-    }, 0.1);
-      console.log("time");
-    var scene = new ScrollMagic.Scene({
-            triggerElement: "#section_01",
-            reverse: true,
-        })
-
-      .setTween(wp)
-      .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
-
-
-
-
-
-
-  // TweenMax.staggerTo(".flow .item", 0.5, {
-  //       y: -100,
-  //       opacity: 0
-  //   }, {
-  //       y: 0,
-  //       opacity: 1,
-  //       // repeat: 1,
-  //       // repeatDelay: 0.5,
-  //       // yoyo: true
-  //       // rotation: 360
-  //   }, 0.3);
-
-
-
-
-
+        // repeat: 1,
+        // repeatDelay: 0.5,
+        // yoyo: true
+        // rotation: 360
+    }, 0.3);
+  console.log("tween");
 });
