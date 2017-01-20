@@ -48,46 +48,67 @@ $(function() {
     //  add css
 
     var ourScene = new ScrollMagic.Scene({
-      triggerElement:'#section_02'
+            triggerElement: '#section_02',
+            duration: '80%',
+            offset: '100px'
+        })
+        .setClassToggle('.icon', 'fade-in') //add class to id
+        .addIndicators({
+            name: 'fade scene'
+        })
+        .addTo(controller);
+    console.log("section_02  ok");
+
+    //logo 變背景顏色
+
+    var ourScene_part2 = new ScrollMagic.Scene({
+            triggerElement: '#section_03'
+        })
+        .setClassToggle('.bgc', 'color_fadein') //add class to id
+        .addIndicators({
+            name: 'fade scene color'
+        })
+        .addTo(controller);
+    console.log("section_03  ok");
+
+    //sticky  box
+
+    var sence_sticky = new ScrollMagic.Scene({
+            triggerElement: '#section_04',
+            duration: 300,
+            offset: 100
+        })
+        .setPin("#sticky")
+        .addIndicators({
+            name: 'sticky '
+        })
+        .addTo(controller);
+    console.log("sticky  ok");
+
+//移動字體
+
+var scene = new ScrollMagic.Scene({
+        triggerElement: "#section_05",
+        duration: 400,
+        // offset: 150,
+        //only run once
+        reverse: true
     })
-  .setClassToggle('.icon' , 'fade-in')  //add class to id
-  .addIndicators({
-    name: 'fade scene'
-  })
-  .addTo(controller);
-  console.log("section_02  ok");
+    .setTween(TweenMax.staggerTo(".section_06 .title", 1, {
+        opacity: 1,
+        x: 980,
+        ease: Strong.easeInOut
+    }))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
 
-//logo 變背景顏色
+//stellar init
 
-  var ourScene_part2 = new ScrollMagic.Scene({
-    triggerElement:'#section_03'
-  })
-.setClassToggle('.bgc' , 'color_fadein')  //add class to id
-.addIndicators({
-  name: 'fade scene color'
-})
-.addTo(controller);
-console.log("section_03  ok");
-
-//sticky  box
-
-var sence_sticky = new ScrollMagic.Scene({
-     triggerElement: '#section_04',
-     duration:300,
-     offset:100
-})
-.setPin("#sticky")
-.addIndicators({
-  name: 'sticky '
-})
-.addTo(controller);
-console.log("sticky  ok");
-
-
-
-
-
-
+$('#container').stellar({
+    scrollProperty: 'scroll',
+    // verticalOffset: 100,
+    responsive: true
+});
 
 
 
