@@ -24,38 +24,51 @@ $(function() {
     console.log("ok");
     //scrollmagic start
 
-//   var controller = new ScrollMagic.Controller();
-// // new 場景
-//
-//
-//
-//   var wp = new TweenMax().staggerFromTo(".flow .item", 0.5, {
-//         y: -50,
-//         opacity: 0
-//     }, {
-//         y: 0,
-//         opacity: 1,
-//     }, 0.1);
-//       console.log("time");
-//     var scene = new ScrollMagic.Scene({
-//             triggerElement: "#section_01",
-//             reverse: true,
-//         })
-//
-//       .setTween(wp)
-//       .addIndicators() // add indicators (requires plugin)
-//       .addTo(controller);
+    var controller = new ScrollMagic.Controller();
+    // new 場景
 
-  TweenMax.staggerTo(".flow .item", 0.5, {
-        y: -100,
+    var wp = new TimelineMax().staggerFromTo(".flow .item", 0.5, {
+        y: -50,
         opacity: 0
     }, {
         y: 0,
         opacity: 1,
-        // repeat: 1,
-        // repeatDelay: 0.5,
-        // yoyo: true
-        // rotation: 360
-    }, 0.3);
-  console.log("tween");
+    }, 0.1);
+    console.log("time");
+    var scene = new ScrollMagic.Scene({
+            triggerElement: "#section_01",
+            reverse: true,
+        })
+
+        .setTween(wp)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
+
+    //  add css
+
+    var ourScene = new ScrollMagic.Scene({
+      triggerElement:'#section_02'
+    })
+  .setClassToggle('.icon' , 'fade-in')  //add class to id
+  .addIndicators({
+    name: 'fade scene'
+  })
+  .addTo(controller);
+  console.log("section_02  ok");
+
+
+  var ourScene_part2 = new ScrollMagic.Scene({
+    triggerElement:'#section_03'
+  })
+.setClassToggle('.bgc' , 'color_fadein')  //add class to id
+.addIndicators({
+  name: 'fade scene color'
+})
+.addTo(controller);
+console.log("section_03  ok");
+
+
+
+
 });

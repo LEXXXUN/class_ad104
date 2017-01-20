@@ -5896,3 +5896,35 @@ body {
     margin-top: 20px; }
 .wrapper .section_02 .flow .item {
   height: 120px; }
+.wrapper .section_03 {
+  background-color: #2b236e;
+  padding-top: 150px; }
+  .wrapper .section_03 .icon {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out; }
+    .wrapper .section_03 .icon.fade-in {
+      opacity: 1;
+      transform: translateY(0); }
+    .wrapper .section_03 .icon img {
+      width: 300px; }
+    .wrapper .section_03 .icon .title {
+      margin-top: 30px;
+      color: #fff;
+      font-size: 40px; }
+.wrapper .section_04 {
+  background-color: #c90034;
+  padding-top: 350px; }
+  .wrapper .section_04.bgc.color_fadein {
+    background-color: black; }
+  .wrapper .section_04 .logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .wrapper .section_04 .logo img {
+      width: 200px; }

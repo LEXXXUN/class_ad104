@@ -1,14 +1,11 @@
 @import "assets/var";
-@import "assets/mixin";
-// @import "assets/font";
+@import "assets/mixin"; // @import "assets/font";
 @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
     background-color: #000000;
     color: rgb(255, 255, 255);
 }
-
-
 
 .section {
     width: 100%;
@@ -17,32 +14,69 @@ body {
 }
 
 .wrapper {
-
-
-
     .section_01 {
         text-align: center;
         padding-top: 300px;
+
         p {
-          margin-top: 20px;
+            margin-top: 20px;
         }
     }
 
-
     .section_02 {
-       .flow{
-         .item {
-           height: 120px;
-         }
-
-
-       }
-
-
-
+        .flow {
+            .item {
+                height: 120px;
+            }
+        }
     }
 
+    .section_03 {
+        background-color: rgb(43, 35, 110);
+        padding-top: 150px;
 
+        .icon {
+            width: 300px;
+            // background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
 
+            &.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
+            img {
+                width: 300px;
+            }
+
+            .title {
+                margin-top: 30px;
+                color: #fff;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .section_04 {
+        background-color: rgb(201, 0, 52);
+        padding-top: 350px;
+        &.bgc.color_fadein {
+          background-color: rgb(0, 0, 0);
+        }
+        .logo {
+          width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          img{
+            width: 200px;
+          }
+
+        }
+    }
 }
