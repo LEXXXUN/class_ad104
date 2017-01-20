@@ -65,18 +65,41 @@ body {
     .section_04 {
         background-color: rgb(201, 0, 52);
         padding-top: 350px;
-        &.bgc.color_fadein {
-          background-color: rgb(0, 0, 0);
-        }
-        .logo {
-          width: 200px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          img{
-            width: 200px;
-          }
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
 
+        &.bgc.color_fadein {
+            background-color: rgb(0, 0, 0);
+            transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+        }
+
+        .logo {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+    .section_05 {
+        padding-top: 120px;
+        background-color: #73db7a;
+        // background: url("http://dummy-images.com/people/dummy-2560x1920-Apollo11.jpg") no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        .sticky {
+            width: 120px;
+            height: 230px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #faff00;
         }
     }
 }

@@ -5918,9 +5918,15 @@ body {
       font-size: 40px; }
 .wrapper .section_04 {
   background-color: #c90034;
-  padding-top: 350px; }
+  padding-top: 350px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear; }
   .wrapper .section_04.bgc.color_fadein {
-    background-color: black; }
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
   .wrapper .section_04 .logo {
     width: 200px;
     margin-left: auto;
@@ -5928,3 +5934,12 @@ body {
     text-align: center; }
     .wrapper .section_04 .logo img {
       width: 200px; }
+.wrapper .section_05 {
+  padding-top: 120px;
+  background-color: #73db7a; }
+  .wrapper .section_05 .sticky {
+    width: 120px;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #faff00; }

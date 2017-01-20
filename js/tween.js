@@ -57,6 +57,7 @@ $(function() {
   .addTo(controller);
   console.log("section_02  ok");
 
+//logo 變背景顏色
 
   var ourScene_part2 = new ScrollMagic.Scene({
     triggerElement:'#section_03'
@@ -67,6 +68,26 @@ $(function() {
 })
 .addTo(controller);
 console.log("section_03  ok");
+
+//sticky  box
+
+var sence_sticky = new ScrollMagic.Scene({
+     triggerElement: '#section_04',
+     duration:300,
+     offset:100
+})
+.setPin("#sticky")
+.addIndicators({
+  name: 'sticky '
+})
+.addTo(controller);
+console.log("sticky  ok");
+
+
+
+
+
+
 
 
 
