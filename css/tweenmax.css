@@ -5889,25 +5889,35 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.wrapper .navbar {
-  position: relative; }
-  .wrapper .navbar .navli {
+.navbar {
+  position: relative;
+  background-color: #f7f7f7;
+  width: 100%;
+  z-index: 1000; }
+  .navbar.on {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .navbar li {
+    list-style-type: none; }
+  .navbar .navli {
     padding: 1em;
-    background-color: #2b2b2b;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    color: #fff; }
-    .wrapper .navbar .navli a,
-    .wrapper .navbar .navli a:hover {
-      color: #fff;
+    color: #e81515; }
+    .navbar .navli a,
+    .navbar .navli a:hover {
+      color: #e61717;
       text-decoration: none; }
+
 .wrapper .section_01 {
   text-align: center;
   padding-top: 300px; }
   .wrapper .section_01 p {
     margin-top: 20px; }
-.wrapper .section_02 .flow .item {
-  height: 120px; }
+.wrapper .section_02 {
+  background-color: #dd0000;
+  padding-top: 150px; }
+  .wrapper .section_02 .flow .item {
+    height: 120px; }
 .wrapper .section_03 {
   background-color: #2b236e;
   padding-top: 150px; }
@@ -5929,7 +5939,7 @@ body {
       color: #fff;
       font-size: 40px; }
 .wrapper .section_04 {
-  background-color: #c90034;
+  background-color: #d51043;
   padding-top: 350px;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -5961,7 +5971,8 @@ body {
   background-position: center; }
   .wrapper .section_06 .title {
     font-size: 40px;
-    padding-top: 150px; }
+    padding-top: 150px;
+    margin-left: -330px; }
 .wrapper .section_07 .image_stellar {
   background: url("https://unsplash.it/2048/500?image=1083") no-repeat;
   background-attachment: fixed;
@@ -5976,3 +5987,20 @@ body {
     font-size: 28px;
     padding-top: 150px;
     position: relative; }
+
+.gototop {
+  top: 85%;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  cursor: pointer;
+  background-color: rgba(197, 228, 0, 0.98);
+  transition: all 0.3s;
+  opacity: 0; }
+
+.on {
+  top: 85%;
+  right: 20px;
+  opacity: 1;
+  transition: all 0.3s; }

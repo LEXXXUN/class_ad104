@@ -13,26 +13,32 @@ body {
     @include box-sizing(border-box);
 }
 
-.wrapper {
-//nav bar
-
 .navbar {
     position: relative;
+    background-color: #f7f7f7;
+    width: 100%;
+    z-index: 1000;
+    &.on{
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    li {
+      list-style-type: none;
+    }
     .navli {
         padding: 1em;
-        background-color: #2b2b2b;
-        @include opacity(0.8);
-        color: #fff;
+        color: #e81515;
         a,
         a:hover {
-            color: #fff;
+            color: #e61717;
             text-decoration: none;
         }
     }
 }
 
-
-
+.wrapper {
+//nav bar
   //section_01
     .section_01 {
         text-align: center;
@@ -44,6 +50,8 @@ body {
     }
 
     .section_02 {
+      background-color: #dd0000;
+      padding-top: 150px;
         .flow {
             .item {
                 height: 120px;
@@ -83,7 +91,7 @@ body {
     }
 
     .section_04 {
-        background-color: rgb(201, 0, 52);
+        background-color: #d51043;
         padding-top: 350px;
         transition-property: background-color;
         transition-duration: 0.5s;
@@ -111,9 +119,7 @@ body {
     .section_05 {
         padding-top: 120px;
         background-color: #73db7a;
-        // background: url("http://dummy-images.com/people/dummy-2560x1920-Apollo11.jpg") no-repeat;
-        // background-size: cover;
-        // background-position: center;
+
         .sticky {
             width: 120px;
             height: 230px;
@@ -131,6 +137,7 @@ body {
         .title {
             font-size: 40px;
             padding-top: 150px;
+            margin-left: -330px;
         }
     }
     .section_07 {
@@ -150,7 +157,26 @@ body {
            position: relative;
 
         }
-
       }
     }
 }
+
+
+.gototop {
+  top: 85%;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  cursor: pointer;
+  background-color: rgba(197, 228, 0, 0.98);
+  transition: all 0.3s;
+  opacity: 0; }
+
+
+
+.on {
+  top: 85%;
+  right: 20px;
+  opacity: 1;
+  transition: all 0.3s; }
